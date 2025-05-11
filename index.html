@@ -1,97 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Christiana Pak Nguyen</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      background-color: #f8f9fa;
-      color: #212529;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    h1, h2, h3 {
-      color: #007acc;
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      line-height: 1.6;
     }
     a {
       color: #007acc;
       text-decoration: none;
     }
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: bold;
+      color: #333333;
+    }
+    /* Sections */
     section {
-      margin-bottom: 3rem;
+      padding: 6rem 2rem 2rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    .projects ul, .community ul, .performance ul, .film ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+    /* Hero Section */
+    #hero {
+      padding-top: 8rem;
+      text-align: center;
     }
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    #hero p {
+      font-size: 1.25rem;
+      color: #666666;
+    }
+    /* Work Section */
+    #work {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-info {
+      padding: 1rem;
+    }
+    .project-info h3 {
+      margin-bottom: 0.5rem;
+    }
+    .project-info p {
+      color: #666666;
+      font-size: 0.95rem;
+    }
+    /* About Section */
+    #about p {
+      margin-bottom: 1rem;
+    }
+    /* Contact Section */
+    #contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #007acc;
+    }
+    /* Footer */
     footer {
-      margin-top: 4rem;
-      font-size: 0.9em;
-      color: #555;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999999;
     }
   </style>
 </head>
 <body>
 
-  <h1>Christiana Pak Nguyen</h1>
-  <p><a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a></p>
+  <!-- Navigation -->
+  <nav>
+    <div><strong>Christiana Pak Nguyen</strong></div>
+    <div>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <section>
-    <h2>Hi! I'm Christiana.</h2>
-    <p>
-      In everything I do, I approach challenges with a systems-thinking mindset—balancing analytical precision with the ability to think big picture.
-      I thrive in interdisciplinary environments, where I can collaborate with experts from diverse fields to discuss complex problems.
-      I place great value on understanding the people I work with, learning what drives them, and ensuring we align on a shared vision.
-    </p>
-    <p>
-      As a student researcher and teammate, I prioritize asking the right questions and never settle for incomplete explanations.
-      My goal is to develop solutions that are functionally refined and well thought out. I am also deeply interested in understanding the compromises that must be made during the design process—how to allocate time and resources effectively, as well as managing both the project and team dynamics.
-      I excel at identifying the best person for each task and am skilled at initiating networking to overcome knowledge gaps and collaborate across disciplines.
-    </p>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Christiana Pak Nguyen</h1>
+    <p>Designer | Researcher | Music Composer</p>
   </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Robotic Self Feeding Device</strong> – 10-person team developing autonomous lightweight feeding system</li>
-      <li><strong>MIT Gala 2024</strong> – Dress designed and fabricated by me, inspired by Korean traditional Hanbok</li>
-      <li><strong>Smarter Safety Glasses</strong> – Capstone Project: Engineering Design and Development</li>
-      <li><strong>MIT Momentum 2025 Competition</strong> – Award-winning design: “Autonomous Patrol of Firefighting Robots”</li>
-      <li><strong>UR Mini-Project: Biosensing Chip Housing</strong> – Custom microfluidic chip alignment design</li>
-      <li><strong>LEM Sensor Installation</strong></li>
-      <li><strong>Blade Block Spacer Design</strong></li>
-      <li><strong>Rotor Deflection Analysis</strong></li>
-      <li><strong>CEA (PLTW)</strong> – Constrained design practice: Curtain wall and green roof proposals</li>
-      <li><strong>Residence Drawing</strong> – Revit model from scaled sketch for client C. Melchin</li>
-      <li><strong>Electric Guitar Making Class (IAP 2025)</strong> – Built from scratch using woodworking tools and electronics</li>
-      <li><strong>Torque Calculation Program</strong></li>
-    </ul>
+  <!-- Work Section -->
+  <section id="work">
+    <div class="project">
+      <img src="images/robotic-feeding-device.jpg" alt="Robotic Self Feeding Device">
+      <div class="project-info">
+        <h3>Robotic Self Feeding Device</h3>
+        <p>Collaborated with a 10-person team to develop an autonomous lightweight feeding system.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="images/mit-gala-dress.jpg" alt="MIT Gala 2024 Dress">
+      <div class="project-info">
+        <h3>MIT Gala 2024 Dress</h3>
+        <p>Designed and fabricated a dress inspired by traditional Korean Hanbok, featured at the 2024 MIT Gala.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="images/safety-glasses.jpg" alt="Smarter Safety Glasses">
+      <div class="project-info">
+        <h3>Smarter Safety Glasses</h3>
+        <p>Capstone project focusing on engineering design and development of intelligent safety eyewear.</p>
+      </div>
+    </div>
+    <!-- Add more projects as needed -->
   </section>
 
-  <section class="community">
-    <h2>Community</h2>
-    <ul>
-      <li>Volunteer at <strong>AmpSurf</strong> – Supporting Adaptive Surf Therapy participants with diverse needs</li>
-      <li>Exhibition Design – Panels for Historic New England's Eustis Estate exhibition “Music and Motion: The Chesnut Family Legacy”</li>
-      <li>11-year volunteer at Summer Olympic Games – Roles in registration, coaching, meal service, etc.</li>
-    </ul>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Christiana.</p>
+    <p>In everything I do, I approach challenges with a systems-thinking mindset—balancing analytical precision with the ability to think big picture. I thrive in interdisciplinary environments, collaborating with experts from diverse fields to tackle complex problems. I value understanding the people I work with, learning what drives them, and ensuring we align on a shared vision.</p>
+    <p>As a student researcher and teammate, I prioritize asking the right questions and never settle for incomplete explanations. My goal is to develop solutions that are functionally refined and well thought out. I'm deeply interested in understanding the compromises that must be made during the design process—how to allocate time and resources effectively, and managing both project and team dynamics. I excel at identifying the best person for each task and am skilled at initiating networking to overcome knowledge gaps and collaborate across disciplines.</p>
   </section>
 
-  <section class="performance">
-    <h2>Performance</h2>
-    <ul>
-      <li>All Easterns Treble Chorus (NAFME)</li>
-      <li>MIT Latin Dance Performance Team</li>
-      <li>All States Performance 2022 (MMEA)</li>
-      <li><strong>“Lost in Time”</strong> – Original composition performance (2023)</li>
-    </ul>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:cpnguyen@mit.edu">cpnguyen@mit.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/christianapakyen" target="_blank">christianapakyen</a></p>
+    <!-- Add other social links as needed -->
   </section>
 
-  <section class="film">
-    <h2>Filmmaker & Animator Inquiries</h2>
-    <p>
-      I've been writing and composing original music since I was very young, and it's been a lifelong dream of mine to collaborate with filmmakers and animators in creating art that touches the soul
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Christiana P. Nguyen</p>
+  </footer>
+
+</body>
+</html>
