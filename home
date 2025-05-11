@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    h1 { color: #007acc; }
+    a { color: #007acc; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Hello, I'm [Your Name]!</h1>
+  <p>Welcome to my personal website. I'm passionate about [your interests].</p>
+  <p>Check out my <a href="https://github.com/yourusername">GitHub</a>!</p>
+</body>
+</html>
