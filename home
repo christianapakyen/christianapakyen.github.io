@@ -1,24 +1,97 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name</title>
+  <title>Christiana Pak Nguyen</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 2rem;
       background-color: #f8f9fa;
       color: #212529;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
     }
-    h1 { color: #007acc; }
-    a { color: #007acc; text-decoration: none; }
+    h1, h2, h3 {
+      color: #007acc;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .projects ul, .community ul, .performance ul, .film ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9em;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm [Your Name]!</h1>
-  <p>Welcome to my personal website. I'm passionate about [your interests].</p>
-  <p>Check out my <a href="https://github.com/yourusername">GitHub</a>!</p>
-</body>
-</html>
+
+  <h1>Christiana Pak Nguyen</h1>
+  <p><a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a></p>
+
+  <section>
+    <h2>Hi! I'm Christiana.</h2>
+    <p>
+      In everything I do, I approach challenges with a systems-thinking mindset—balancing analytical precision with the ability to think big picture.
+      I thrive in interdisciplinary environments, where I can collaborate with experts from diverse fields to discuss complex problems.
+      I place great value on understanding the people I work with, learning what drives them, and ensuring we align on a shared vision.
+    </p>
+    <p>
+      As a student researcher and teammate, I prioritize asking the right questions and never settle for incomplete explanations.
+      My goal is to develop solutions that are functionally refined and well thought out. I am also deeply interested in understanding the compromises that must be made during the design process—how to allocate time and resources effectively, as well as managing both the project and team dynamics.
+      I excel at identifying the best person for each task and am skilled at initiating networking to overcome knowledge gaps and collaborate across disciplines.
+    </p>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Robotic Self Feeding Device</strong> – 10-person team developing autonomous lightweight feeding system</li>
+      <li><strong>MIT Gala 2024</strong> – Dress designed and fabricated by me, inspired by Korean traditional Hanbok</li>
+      <li><strong>Smarter Safety Glasses</strong> – Capstone Project: Engineering Design and Development</li>
+      <li><strong>MIT Momentum 2025 Competition</strong> – Award-winning design: “Autonomous Patrol of Firefighting Robots”</li>
+      <li><strong>UR Mini-Project: Biosensing Chip Housing</strong> – Custom microfluidic chip alignment design</li>
+      <li><strong>LEM Sensor Installation</strong></li>
+      <li><strong>Blade Block Spacer Design</strong></li>
+      <li><strong>Rotor Deflection Analysis</strong></li>
+      <li><strong>CEA (PLTW)</strong> – Constrained design practice: Curtain wall and green roof proposals</li>
+      <li><strong>Residence Drawing</strong> – Revit model from scaled sketch for client C. Melchin</li>
+      <li><strong>Electric Guitar Making Class (IAP 2025)</strong> – Built from scratch using woodworking tools and electronics</li>
+      <li><strong>Torque Calculation Program</strong></li>
+    </ul>
+  </section>
+
+  <section class="community">
+    <h2>Community</h2>
+    <ul>
+      <li>Volunteer at <strong>AmpSurf</strong> – Supporting Adaptive Surf Therapy participants with diverse needs</li>
+      <li>Exhibition Design – Panels for Historic New England's Eustis Estate exhibition “Music and Motion: The Chesnut Family Legacy”</li>
+      <li>11-year volunteer at Summer Olympic Games – Roles in registration, coaching, meal service, etc.</li>
+    </ul>
+  </section>
+
+  <section class="performance">
+    <h2>Performance</h2>
+    <ul>
+      <li>All Easterns Treble Chorus (NAFME)</li>
+      <li>MIT Latin Dance Performance Team</li>
+      <li>All States Performance 2022 (MMEA)</li>
+      <li><strong>“Lost in Time”</strong> – Original composition performance (2023)</li>
+    </ul>
+  </section>
+
+  <section class="film">
+    <h2>Filmmaker & Animator Inquiries</h2>
+    <p>
+      I've been writing and composing original music since I was very young, and it's been a lifelong dream of mine to collaborate with filmmakers and animators in creating art that touches the soul
